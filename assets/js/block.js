@@ -3,20 +3,20 @@ $(document).ready(function(){
 
   $(".flex-nav").hide();
   $(".flex-large").hide();
-  $("#nav-detail").hide();
+  $(".detail").hide();
 
-/*
+
   $("#title-bar").hover(function () {
-      $("#nav-bar").attr("src", "img/navbar_r.png");
+      $("#nav-bar").prop("src", "img/navbar_r.png");
   }, function () {
-      $("#nav-bar").attr("src", "img/navbar_b.png");
-  });*/
+      $("#nav-bar").prop("src", "img/navbar_b.png");
+  });
 
-  $("#1").hover(function () {
+  /*$("#1").hover(function () {
       $("#hr").attr("src", "img/hr_r.png");
   }, function () {
       $("#hr").attr("src", "img/hr_b.png");
-  });
+  });*/
 
   $("#2").hover(function () {
       $("#pr").attr("src", "img/pr_r.png");
@@ -73,23 +73,61 @@ $(document).ready(function(){
   });
 
   var prev = "#_0";
+  var block = "#pr";
 
   $("#title-bar").click(function(){
-    $("#nav-bar").hide();
-    $("#nav-detail").show();
-
-
-
+    $("#nav-bar").toggle();
+    $(".detail").toggle();
   });
 
+  /* pattern 2
   $("#1").click(function(){
+    $(".flex-nav").hide("fast");
+    $("#_1").toggle(1000);
+  });
+
+  $("#2").click(function(){
+    $(".flex-nav").hide("fast");
+    $("#_2").toggle(1000);
+  });
+  */
+  /* testing
+  $("#hr").hover(function () {
+      $("#hr").attr("src", "img/hr_r.png");
+  }, function () {
+      $("#hr").attr("src", "img/hr_b.png");
+  });
+
+  $("#hr").click(function(){
+    if(block!="#hr"){
+      $(block).hover(function () {
+          $("#hr").attr("src", "img/hr_r.png");
+      }, function () {
+          $("#hr").attr("src", "img/hr_b.png");
+      });
+    }
+    block = "#hr";
+    if(block=="#hr"){
+      $(block).hover(function(){
+            $(this).attr("src", "img/hr_r.png");
+      });
+    }
 
     if(prev!="#_1"){
       $(prev).hide("fast");
-      $("#_1").show(1000);
+      $("#_1").toggle();
+      prev="#_1";
+    }
+});*/
+
+  $("#1").click(function(){
+    if(prev!="#_1"){
+      $(prev).hide("fast");
+      $("#_1").toggle();
       prev="#_1";
     }
   });
+
 
 
   $("#2").click(function(){
@@ -159,7 +197,6 @@ $(document).ready(function(){
   $("#10").click(function(){
     if(prev!="#_10"){
       $(prev).hide("fast");
-      $("#_10").show(1000);
       prev="#_10";
     }
   });

@@ -7,34 +7,66 @@
 		  <meta name="viewport" content="width=device-width, initial-scale=1" />
 		  <link rel="stylesheet" href="assets/css/style.css" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-      <script src="assets/js/block.js"></script>
+      <script src="assets/js/main.js"></script>
 	  </head>
+<!--
+______
+|   _  \
+|  |_| /
+|  ___/
+| |
+|_|
 
+-->
   <body>
   <ul class="flex-container" id="title-bar">
-    <li class="flex-item" style="font-family: Arial">
+    <li class="flex-item">
       <span class="image move">
         <img id="nav-bar" src="img/navbar_b.png" alt="">
       </span>
       <span class="image detail">
-        <img id="nav-detail" src="img/detail/navbar_button.png" alt="">
+        <img id="nav-detail" src="img/detail/navbar_nobut.png" alt="">
         <div class="three-buttons">
-          <img src="img/buttons/h_r.png" alt="">
-          <img src="img/buttons/fb_r.png" alt="">
+          <a href="http://blog.tedxtainan.org/">
+            <img id="h" src="img/buttons/h_b.png" alt="">
+          </a>
+          <a href="#">
+            <img id="fb" src="img/buttons/fb_b.png" alt="">
+          </a>
+          <a href="#">
+            <img id="ig" src="img/buttons/ig_b.png" alt="">
+          </a>
         </div>
-
+        <div class="side-buttons">
+          <a href="#">
+            <img id="2011" src="img/buttons/2011_b.png" alt="">
+          </a>
+          <a href="#">
+            <img id="2012" src="img/buttons/2012_b.png" alt="">
+          </a>
+          <a href="#">
+            <img id="2013" src="img/buttons/2013_b.png" alt="">
+          </a>
+          <a href="#">
+            <img id="2014" src="img/buttons/2014_b.png" alt="">
+          </a>
+          <a href="#">
+            <img id="2015" src="img/buttons/2015_b.png" alt="">
+          </a>
+        </div>
+        <div class="joinus">
+          <a href="#">
+            <img id="joinbut" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
-      <a href="#">
-        <div class="content">
-        </div>
-      </a>
     </li>
   </ul>
 
   <ul class="flex-container" id="content-bar">
     <li class="flex-item" id="1" style="">
       <span class="image move">
-        <a href="#content-bar">
+        <a href="#hr">
           <img id="hr" src="img/hr_b.png" alt="">
         </a>
       </span>
@@ -46,6 +78,23 @@
         </a>
       </span>
     </li>
+    <!-- hr and pr for phone -->
+    <li class="flex-phone" id="p1">
+      <span class="image phone">
+        <img src="img/phone/hr_detailphone.png" alt="">
+        <div class="phonebut">
+        </div>
+      </span>
+    </li>
+    <li class="flex-phone" id="p2">
+      <span class="image phone">
+        <img src="img/phone/pr_detailphone.png" alt="">
+        <div class="phonebut">
+        </div>
+      </span>
+    </li>
+    <!-- end -->
+
     <li class="flex-item" id="3" style="">
       <span class="image move">
         <a href="#content-bar">
@@ -60,6 +109,23 @@
         </a>
       </span>
     </li>
+
+    <!-- curating and design for phone -->
+    <li class="flex-phone" id="p3">
+      <span class="image phone">
+        <img src="img/phone/curating_detailphone.png" alt="">
+        <div class="phonebut">
+        </div>
+      </span>
+    </li>
+    <li class="flex-phone" id="p4">
+      <span class="image phone">
+        <img src="img/phone/design_detailphone.png" alt="">
+        <div class="phonebut">
+        </div>
+      </span>
+    </li>
+    <!-- end -->
     <li class="flex-item" id="5" style="">
       <span class="image move">
         <a href="#content-bar">
@@ -67,39 +133,58 @@
         </a>
       </span>
     </li>
-
     <!-- detail part1 -->
-
-    <div id="_0"></div>
-
     <li class="flex-nav" id="_1">
-      <span class="image">
-        <img src="img/detail/hr_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/hr_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_2">
-      <span class="image">
-        <img src="img/detail/pr_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/pr_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut2" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_3">
-      <span class="image">
-        <img src="img/detail/curating_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/curating_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut3" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_4">
-      <span class="image">
-        <img src="img/detail/design_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/design_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut4" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_5">
-      <span class="image">
-        <img src="img/detail/finance_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/finance_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut5" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
-
     <!-- part1 end -->
-
     <li class="flex-item" id="6" style="">
       <span class="image move">
         <img id="it" src="img/it_b.png" alt="">
@@ -108,6 +193,22 @@
         <div class="content"></div>
       </a>
     </li>
+    <!-- finance and it for phone -->
+    <li class="flex-phone" id="p5">
+      <span class="image phone">
+        <img src="img/phone/finance_detailphone.png" alt="">
+        <div class="phonebut">
+        </div>
+      </span>
+    </li>
+    <li class="flex-phone" id="p6">
+      <span class="image phone">
+        <img src="img/phone/it_detailphone.png" alt="">
+        <div class="phonebut">
+        </div>
+      </span>
+    </li>
+    <!-- end -->
     <li class="flex-item" id="7" style="">
       <span class="image move">
         <img id="market" src="img/market_b.png" alt="">
@@ -120,62 +221,67 @@
       <span class="image move">
         <img id="photo" src="img/photo_b.png" alt="">
       </span>
-      <a href="#8">
-        <div class="content"></div>
-      </a>
+      <a href="#8"></a>
     </li>
     <li class="flex-item" id="9" style="">
+      <a href="#9"></a>
       <span class="image move">
         <img id="sd" src="img/sd_b.png" alt="">
       </span>
-      <a href="#9">
-        <div class="content"></div>
-      </a>
     </li>
     <li class="flex-item" id="10" style="">
       <span class="image move">
         <img id="join" src="img/join_b.png" alt="">
       </span>
       <a href="http://drive.google.com/uc?export=download&id=0B3X_LcqIRrpeMGJNOU5LME1BZnc">
-        <div class="content"></div>
       </a>
     </li>
 
     <!-- detail part2 -->
 
     <li class="flex-nav" id="_6">
-      <span class="image">
-        <img src="img/detail/it_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/it_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut6" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_7">
-      <span class="image">
-        <img src="img/detail/market_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/market_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut7" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_8">
-      <span class="image">
-        <img src="img/detail/photo_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/photo_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut8" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_9">
-      <span class="image">
-        <img src="img/detail/sd_detail.png" alt="">
+      <span class="image full">
+        <img src="img/detail/sd_detailnobut.png" alt="">
+        <div class="but">
+          <a href="#">
+            <img id="jbut9" src="img/buttons/join_b.png" alt="">
+          </a>
+        </div>
       </span>
     </li>
     <li class="flex-nav" id="_10"></li>
   </ul>
-
-
   <!-- part2 end -->
-
-  <!-- Scripts -->
-
-
-
-
-
-
 
   </body>
 

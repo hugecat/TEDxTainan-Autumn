@@ -11,11 +11,7 @@
 
   div {
     position: absolute;
-    opacity: 0;
-  }
-
-  div:hover {
-    opacity: 1;
+    opacity: 1; /* origin: opacity: 0; */
   }
 
   a {
@@ -60,31 +56,65 @@
     background: none;
   }
 
-  #title-bar:hover {
-    /*transform: scale(1.1);*/
-  }
-
   button > img {
     width: 30%;
     height: 30%;
   }
 
-  .flex-container span > div {
-    display: inline-block;
-    position: absolute;
+  #p1, #p2, #p3, #p4 {
+    display: none;
   }
 
-  .flex-container > .three-buttons {
-    width: 300px;
+
+  .flex-container li > .image .three-buttons a img {
+    width: 24.5%;
+    padding-left: 6.8%;
+    padding-top: 8%;
   }
 
-  .three-buttons {
+  .flex-container span > .three-buttons {
     display: inline-block;
     position: absolute;
-    height: 100px;
-    width: 200px;
+    margin: 1%;
+    width: 22.5%;
+    height: 18%;
+    left: 1%;
+    top: 73%;
+  }
+
+  .flex-container li > .image .side-buttons a img {
+    padding-bottom: 5%;
+  }
+
+  .flex-container span > .side-buttons {
+    display: inline-block;
+    position: absolute;
+    margin: 13%;
+    width: 22.4%;
+    top: -11%;
+    left: 62.7%;
+  }
+
+  .flex-container span > .joinus {
+    display: inline-block;
+    position: absolute;
+    margin: 12%;
+    width: 11%;
     top: 50%;
-    index: 4;
+    left: 69.3%;
+  }
+
+  .flex-container li > .image .but2 a img {
+    width: 10%;
+  }
+
+  .flex-container span .but {
+    display: inline-block;
+    position: absolute;
+    margin: 12%;
+    width: 11%;
+    top: 50%;
+    left: 69.3%;
   }
 
   .three-buttons img {
@@ -121,10 +151,10 @@
     overflow: hidden;
   }
 
-  .flex-container div > image img {
+  /*.flex-container div > .image img {
     display: block;
     width: 100%;
-  }
+  }*/
 
   .flex-container div > .image:before {
     pointer-events: none;
@@ -164,7 +194,7 @@
   }
 
   .flex-container li > .image img {
-    display: block;
+    /*display: block;*/
     width: 100%;
   }
 
@@ -227,14 +257,14 @@
     margin: 0;
   }
 
-  .flex-container li > a .content {
+  /*.flex-container li > a .content {
     transition: max-height 0.5s ease;
     width: 100%;
     max-height: 0;
     line-height: 150px;
-    /*margin-top: 0.35em;*/
+    margin-top: 0.35em;
     opacity: 0;
-  }
+  }*/
 
   .flex-container li > a .content > :last-child {
     margin-bottom: 0;
@@ -253,10 +283,6 @@
     opacity: 0;
   }
 
-body:not(.is-touch) .flex-container li:hover .content {
-  max-height: 250px;
-  opacity: 0.8;
-}
 
 * + .flex-container { /* nav 和 item 之間距離 */
   /*margin-top: 2em;*/
@@ -275,7 +301,6 @@ body.is-touch .flex-container li .content {
 
   .flex-item {
   flex-grow: 1;
-  /*background: burlywood;*/
   padding: 2.5px;
   margin: 5px;
   margin-top: 5px;
@@ -288,12 +313,10 @@ body.is-touch .flex-container li .content {
   flex: 150px;
   }
 
-  .flex-item:hover {
-    /*transform: scale(1.1);*/
+  .flex-item .move:hover {
     z-index: 3;
     opacity: 0.8;
   }
-
 
   .flex-nav {
     opacity: 0.8;
@@ -306,14 +329,12 @@ body.is-touch .flex-container li .content {
     text-align: center;
     transition: transform 0.5s ease, opacity 0.5s ease;
     flex: 100%;
-    height: 600px;
+    height: 10%;
     border: none;
   }
 
-  .flex-large {
-    display: block;
-    width: 100%;
-    background: burlywood;
+  .flex-phone {
+    opacity: 0.8;
     padding: 2.5px;
     margin: 5px;
     margin-top: 5px;
@@ -321,21 +342,25 @@ body.is-touch .flex-container li .content {
     font-weight: bold;
     font-size: 3em;
     text-align: center;
-    height: 400px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    flex: 100%;
+    height: 50%;
+    border: none;
+    display: none;
   }
 
   #_0 {
     display: none;
   }
 
-  .content {
+  /*.content {
     transition: max-height 0.5s ease;
     width: 100%;
     max-height: 0;
     line-height: 1.5;
     margin-top: 0.35em;
     background: #ffffff;
-  }
+  }*/
 
   /* image */
 
@@ -396,6 +421,8 @@ body.is-touch .flex-container li .content {
     position: absolute;
     margin: 0px;
   }
+
+
 
 
   @media screen and (max-width: 1440px) {
@@ -474,13 +501,53 @@ body.is-touch .flex-container li .content {
 
   }
 
+  @media screen and (min-width: 491px) {
+    #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8,#p9 {
+      display: none;
+    }
+
+    .phone img {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 490px) {
     .flex-item {
       flex: 150px;
       line-height: 150px;
     }
-    .flex-container li > a .content {
+
+    #_1, #_2, #_3, _4, #_5, #_6, #_7, #_8, #_9 {
+      display: none;
+    }
+
+    .full img {
+      display: none;
+    }
+
+    /*#p1, #p2, #p3, #p4 {
+      display: flex;
+    }*/
+
+    .flex-container li > .phone img {
+      /*height: 50%;*/
+    }
+
+    .flex-item:nth-child(5) {
+      flex: 150px;
       line-height: 150px;
     }
 
+
+  }
+
+  @media screen and (max-width: 345px) {
+    .flex-item {
+      flex: 100px;
+      line-height: 100px;
+    }
+
+    .flex-container li > .full {
+      display: none;
+    }
   }

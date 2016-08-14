@@ -1,10 +1,8 @@
 $(document).ready(function(){
 
-
   $(".flex-nav").hide();
-  $(".flex-large").hide();
   $(".detail").hide();
-
+  $(".flex-phone").hide();
 
   $("#title-bar").hover(function () {
       $("#nav-bar").prop("src", "img/navbar_r.png");
@@ -12,11 +10,119 @@ $(document).ready(function(){
       $("#nav-bar").prop("src", "img/navbar_b.png");
   });
 
-  /*$("#1").hover(function () {
+  $("#h").hover(function () {
+      $("#h").prop("src", "img/buttons/h_r.png");
+  }, function () {
+      $("#h").prop("src", "img/buttons/h_b.png");
+  });
+
+  $("#fb").hover(function () {
+      $("#fb").prop("src", "img/buttons/fb_r.png");
+  }, function () {
+      $("#fb").prop("src", "img/buttons/fb_b.png");
+  });
+
+  $("#ig").hover(function () {
+      $("#ig").prop("src", "img/buttons/ig_r.png");
+  }, function () {
+      $("#ig").prop("src", "img/buttons/ig_b.png");
+  });
+
+  $("#2011").hover(function () {
+      $("#2011").prop("src", "img/buttons/2011_r.png");
+  }, function () {
+      $("#2011").prop("src", "img/buttons/2011_b.png");
+  });
+
+  $("#2012").hover(function () {
+      $("#2012").prop("src", "img/buttons/2012_r.png");
+  }, function () {
+      $("#2012").prop("src", "img/buttons/2012_b.png");
+  });
+
+  $("#2013").hover(function () {
+      $("#2013").prop("src", "img/buttons/2013_r.png");
+  }, function () {
+      $("#2013").prop("src", "img/buttons/2013_b.png");
+  });
+
+  $("#2014").hover(function () {
+      $("#2014").prop("src", "img/buttons/2014_r.png");
+  }, function () {
+      $("#2014").prop("src", "img/buttons/2014_b.png");
+  });
+
+  $("#2015").hover(function () {
+      $("#2015").prop("src", "img/buttons/2015_r.png");
+  }, function () {
+      $("#2015").prop("src", "img/buttons/2015_b.png");
+  });
+
+  $("#joinbut").hover(function () {
+      $("#joinbut").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#joinbut").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut2").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut2").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut3").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut3").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut4").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut4").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut5").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut5").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut6").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut6").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut7").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut7").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut8").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut8").prop("src", "img/buttons/join_b.png");
+  });
+
+  $(".but").hover(function () {
+      $("#jbut9").prop("src", "img/buttons/join_r.png");
+  }, function () {
+      $("#jbut9").prop("src", "img/buttons/join_b.png");
+  });
+
+  $("#1").hover(function () {
       $("#hr").attr("src", "img/hr_r.png");
   }, function () {
       $("#hr").attr("src", "img/hr_b.png");
-  });*/
+  });
 
   $("#2").hover(function () {
       $("#pr").attr("src", "img/pr_r.png");
@@ -75,60 +181,26 @@ $(document).ready(function(){
   var prev = "#_0";
   var block = "#pr";
 
+
   $("#title-bar").click(function(){
     $("#nav-bar").toggle();
     $(".detail").toggle();
   });
 
-  /* pattern 2
-  $("#1").click(function(){
-    $(".flex-nav").hide("fast");
-    $("#_1").toggle(1000);
-  });
-
-  $("#2").click(function(){
-    $(".flex-nav").hide("fast");
-    $("#_2").toggle(1000);
-  });
-  */
-  /* testing
-  $("#hr").hover(function () {
-      $("#hr").attr("src", "img/hr_r.png");
-  }, function () {
-      $("#hr").attr("src", "img/hr_b.png");
-  });
-
-  $("#hr").click(function(){
-    if(block!="#hr"){
-      $(block).hover(function () {
-          $("#hr").attr("src", "img/hr_r.png");
-      }, function () {
-          $("#hr").attr("src", "img/hr_b.png");
-      });
-    }
-    block = "#hr";
-    if(block=="#hr"){
-      $(block).hover(function(){
-            $(this).attr("src", "img/hr_r.png");
-      });
-    }
-
-    if(prev!="#_1"){
-      $(prev).hide("fast");
-      $("#_1").toggle();
-      prev="#_1";
-    }
-});*/
-
   $("#1").click(function(){
     if(prev!="#_1"){
       $(prev).hide("fast");
       $("#_1").toggle();
       prev="#_1";
     }
+
+    /*if(prev_phone!="#p1"){
+      $(prev_phone).hide("fast");
+      $("#p1").toggle();
+      prev="#p1";
+    }*/
+
   });
-
-
 
   $("#2").click(function(){
     if(prev!="#_2"){
@@ -204,6 +276,14 @@ $(document).ready(function(){
   $(".flex-nav").click(function(){
     $(".flex-nav").hide();
   });
+
+  $(".flex-phone").click(function(){
+    $(this).hide();
+  });
+
+    var prev_phone = "#p0";
+  
+
 
 
 

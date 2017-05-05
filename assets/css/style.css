@@ -1,0 +1,578 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+  body {
+    font-family: 'cwTeXKai', serif;
+    overflow-x: hidden;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  div {
+    position: absolute;
+    opacity: 1; /* origin: opacity: 0; */
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  ul, span {
+    display: block;
+    margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+  }
+
+  ul li {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    width: calc(33.3333% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+  }
+
+  ul div {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    width: calc(33.3333% - 2.5em);
+    margin: 2.5em 0 0 2.5em;
+  }
+
+  button {
+
+    border: none;
+    background: none;
+  }
+
+  button > img {
+    width: 30%;
+    height: 30%;
+  }
+
+  #p1, #p2, #p3, #p4 {
+    display: none;
+  }
+
+
+  .flex-container li > .image .three-buttons a img {
+    width: 24.5%;
+    padding-left: 6.8%;
+    padding-top: 8%;
+  }
+
+  .flex-container span > .three-buttons {
+    display: inline-block;
+    position: absolute;
+    margin: 1%;
+    width: 22.5%;
+    height: 18%;
+    left: 1%;
+    top: 73%;
+  }
+
+  .flex-container li > .image .side-buttons a img {
+    padding-bottom: 5%;
+  }
+
+  .flex-container span > .side-buttons {
+    display: inline-block;
+    position: absolute;
+    margin: 13%;
+    width: 22.4%;
+    top: -11%;
+    left: 62.7%;
+  }
+
+  .flex-container span > .joinus {
+    display: inline-block;
+    position: absolute;
+    margin: 12%;
+    width: 11%;
+    top: 50%;
+    left: 69.3%;
+  }
+
+  .flex-container li > .image .but2 a img {
+    width: 10%;
+  }
+
+  .flex-container span .but {
+    display: inline-block;
+    position: absolute;
+    margin: 12%;
+    width: 11%;
+    top: 50%;
+    left: 69.3%;
+  }
+
+  .three-buttons img {
+    width: 30%;
+    height: auto;
+    float: left;
+    index: 5;
+  }
+
+
+  .flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  postiion: relative;
+  }
+
+  .flex-container div {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
+    /*width: calc(33.3333% - 2.5em);*/
+    margin: 2.5em 0 0 2.5em;
+  }
+
+  .flex-container div > .image {
+    transition: transform 0.5s ease;
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /*.flex-container div > .image img {
+    display: block;
+    width: 100%;
+  }*/
+
+  .flex-container div > .image:before {
+    pointer-events: none;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    z-index: 1;
+    opacity: 0.8;
+  }
+
+  .flex-container div > .image:after {
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    z-index: 2;
+  }
+
+  .flex-container li > .image {
+    transition: transform 0.5s ease;
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .flex-container li > .image img {
+    /*display: block;*/
+    width: 100%;
+  }
+
+  .flex-container li > .image:before {
+    pointer-events: none;
+    transition: background-color 0.5s ease, opacity 0.5s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1.0;
+    z-index: 1;
+    opacity: 0.8;
+  }
+
+  .flex-container li > .image:after {
+    pointer-events: none;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    z-index: 2;
+  }
+
+  .flex-container li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*padding: 1em;*/
+    border-bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    z-index: 3;
+  }
+
+  .flex-container li > a > :last-child {
+    margin: 0;
+  }
+
+  .flex-container li > a:hover { /* content內字的顏色*/
+    color: #000000 !important;
+  }
+
+  .flex-container li > a h2 {
+    margin: 0;
+  }
+
+  /*.flex-container li > a .content {
+    transition: max-height 0.5s ease;
+    width: 100%;
+    max-height: 0;
+    line-height: 150px;
+    margin-top: 0.35em;
+    opacity: 0;
+  }*/
+
+  .flex-container li > a .content > :last-child {
+    margin-bottom: 0;
+  }
+
+  body:not(.is-touch) .flex-container li:hover > .move { /*滑鼠滑過方塊放多大*/
+    transform: scale(1.1);
+  }
+
+  body:not(.is-touch) .flex-container li:hover > .image:before {
+    background-color: #33333;
+    opacity: 0.35;
+  }
+
+  body:not(.is-touch) .flex-container li:hover > .image:after {
+    opacity: 0;
+  }
+
+
+* + .flex-container { /* nav 和 item 之間距離 */
+  /*margin-top: 2em;*/
+}
+
+body.is-loading .flex-container li {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+body.is-touch .flex-container li .content {
+  max-height: 15em;
+  opacity: 1;
+}
+
+
+  .flex-item {
+  flex-grow: 1;
+  padding: 2.5px;
+  margin: 5px;
+  margin-top: 5px;
+  line-height: 150px;
+  color: black;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  flex: 150px;
+  }
+
+  /*.flex-item .move:hover {
+    z-index: 3;
+    opacity: 0.8;
+  }*/
+
+  .flex-nav {
+    opacity: 0.8;
+    padding: 2.5px;
+    margin: 5px;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    flex: 100%;
+    height: 10%;
+    border: none;
+  }
+
+  .flex-phone {
+    opacity: 0.8;
+    padding: 2.5px;
+    margin: 5px;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    flex: 100%;
+    height: 50%;
+    border: none;
+    display: none;
+  }
+
+  #_0 {
+    display: none;
+  }
+
+  /*.content {
+    transition: max-height 0.5s ease;
+    width: 100%;
+    max-height: 0;
+    line-height: 1.5;
+    margin-top: 0.35em;
+    background: #ffffff;
+  }*/
+
+  /* image */
+
+  .image {
+    border: 0;
+		display: inline-block;
+		position: relative;
+    max-width: 100%;
+  }
+
+  .image img {
+    display: block;
+  }
+
+  .image.left, .image.right {
+    max-width: 40%;
+  }
+
+    .image.left img, .image.right img {
+      width: 100%;
+    }
+
+  .image.left {
+    float: left;
+    padding: 0 1.5em 1em 0;
+    top: 0.25em;
+  }
+
+  .image.right {
+    float: right;
+    padding: 0 0 1em 1.5em;
+    top: 0.25em;
+  }
+
+  .image.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+  }
+
+    .image.fit img {
+      width: 100%;
+    }
+
+  .image.main {
+    display: block;
+    margin: 0 0 3em 0;
+    width: 100%;
+  }
+
+    .image.main img {
+      width: 100%;
+    }
+
+  /* image inside content */
+  .logos {
+    display: inline-block;
+    position: absolute;
+    margin: 0px;
+  }
+
+  @media screen and (min-width: 1606px) {
+    .flex-item {
+      flex: 300px;
+      line-height: 300px;
+    }
+  }
+
+  @media screen and (max-width: 1605px) {
+    .flex-item {
+      flex: 250px;
+      line-height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 1425px) {
+    .flex-item {
+      flex: 220px;
+      line-height: 220px;
+    }
+  }
+
+  @media screen and (max-width: 1245px) {
+    .flex-item {
+      flex: 190px;
+      line-height: 190px;
+    }
+  }
+
+  @media screen and (max-width: 1190px) {
+    .flex-item {
+      flex: 185px;
+      line-height: 185px;
+    }
+  }
+
+  @media screen and (max-width: 1185px) {
+    .flex-item {
+      flex: 180px;
+      line-height: 180px;
+    }
+    .flex-container li > a .content {
+      line-height: 180px;
+    }
+
+  }
+
+  @media screen and (max-width: 990px) {
+    .flex-item {
+      flex: 150px;
+      line-height: 150px;
+    }
+    .flex-container li > a .content {
+      line-height: 150px;
+    }
+
+  }
+
+  @media screen and (max-width: 850px) {
+    .flex-item {
+      flex: 130px;
+      line-height: 130px;
+    }
+    .flex-container li > a .content {
+      line-height: 130px;
+    }
+  }
+
+  @media screen and (max-width: 740px) {
+    .flex-item {
+      flex: 110px;
+      line-height: 110px;
+    }
+    .flex-container li > a .content {
+      line-height: 110px;
+    }
+
+  }
+
+  @media screen and (max-width: 640px) {
+    .flex-item {
+      flex: 90px;
+      line-height: 90px;
+    }
+    .flex-container li > a .content {
+      line-height: 90px;
+    }
+
+  }
+
+  @media screen and (max-width: 540px) {
+    .flex-item {
+      flex: 80px;
+      line-height: 80px;
+    }
+    .flex-container li > a .content {
+      line-height: 80px;
+    }
+
+  }
+
+  @media screen and (min-width: 491px) {
+    #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8,#p9 {
+      display: none;
+    }
+
+    .phone img {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 490px) {
+    .flex-item {
+      flex: 150px;
+      line-height: 150px;
+    }
+
+    #_1, #_2, #_3, _4, #_5, #_6, #_7, #_8, #_9 {
+      display: none;
+    }
+
+    .full img {
+      display: none;
+    }
+
+    /*#p1, #p2, #p3, #p4 {
+      display: flex;
+    }*/
+
+    .flex-container li > .phone img {
+      /*height: 50%;*/
+    }
+
+    .flex-container span .phonebut {
+      display: inline-block;
+      position: absolute;
+      margin: 12%;
+      width: 39%;
+      top: 90%;
+      left: 18%;
+    }
+
+
+  }
+
+  @media screen and (max-width: 345px) {
+    .flex-item {
+      flex: 100px;
+      line-height: 100px;
+    }
+
+    .flex-container li > .full {
+      display: none;
+    }
+  }

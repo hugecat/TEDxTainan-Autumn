@@ -313,10 +313,10 @@ body.is-touch .flex-container li .content {
   flex: 150px;
   }
 
-  .flex-item .move:hover {
+  /*.flex-item .move:hover {
     z-index: 3;
     opacity: 0.8;
-  }
+  }*/
 
   .flex-nav {
     opacity: 0.8;
@@ -422,21 +422,42 @@ body.is-touch .flex-container li .content {
     margin: 0px;
   }
 
-
-
-
-  @media screen and (max-width: 1440px) {
+  @media screen and (min-width: 1606px) {
     .flex-item {
-      flex: 200px;
-      line-height: 200px;
+      flex: 300px;
+      line-height: 300px;
     }
-    .flex-container li > a .content {
-      line-height: 200px;
-    }
-
   }
 
-  @media screen and (max-width: 1090px) {
+  @media screen and (max-width: 1605px) {
+    .flex-item {
+      flex: 250px;
+      line-height: 250px;
+    }
+  }
+
+  @media screen and (max-width: 1425px) {
+    .flex-item {
+      flex: 220px;
+      line-height: 220px;
+    }
+  }
+
+  @media screen and (max-width: 1245px) {
+    .flex-item {
+      flex: 190px;
+      line-height: 190px;
+    }
+  }
+
+  @media screen and (max-width: 1190px) {
+    .flex-item {
+      flex: 185px;
+      line-height: 185px;
+    }
+  }
+
+  @media screen and (max-width: 1185px) {
     .flex-item {
       flex: 180px;
       line-height: 180px;
@@ -533,9 +554,13 @@ body.is-touch .flex-container li .content {
       /*height: 50%;*/
     }
 
-    .flex-item:nth-child(5) {
-      flex: 150px;
-      line-height: 150px;
+    .flex-container span .phonebut {
+      display: inline-block;
+      position: absolute;
+      margin: 12%;
+      width: 39%;
+      top: 90%;
+      left: 18%;
     }
 
 

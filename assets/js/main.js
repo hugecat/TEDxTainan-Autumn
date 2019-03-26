@@ -1,8 +1,20 @@
 $(document).ready(function(){
-
   $(".flex-nav").hide();
   $(".detail").hide();
   $(".flex-phone").hide();
+
+  $("#title-bar").click(function(){
+    $("#nav-bar").toggle();
+    $(".detail").toggle();
+  });
+
+  $(".flex-nav").click(function(){
+    $(this).hide();
+  });
+
+  $(".flex-phone").click(function(){
+    $(this).hide();
+  });
 
   $("#title-bar").hover(function () {
       $("#nav-bar").prop("src", "img/navbar_r.png");
@@ -178,116 +190,139 @@ $(document).ready(function(){
       $("#join").attr("src", "img/join_b.png");
   });
 
-  var prev = "#_0";
-  var block = "#pr";
 
+  if ( $(window).width() > 490) {
+    //Add javascript for large screens here
+    var prev = "#_0";
 
-  $("#title-bar").click(function(){
-    $("#nav-bar").toggle();
-    $(".detail").toggle();
-  });
+    $("#1").click(function(){
+      if(prev!="#_1"){
+        $(prev).hide("fast");
+        $("#_1").toggle(1000);
+        prev="#_1";
+      }
 
-  $("#1").click(function(){
-    if(prev!="#_1"){
-      $(prev).hide("fast");
-      $("#_1").toggle();
-      prev="#_1";
-    }
+    });
 
-    /*if(prev_phone!="#p1"){
-      $(prev_phone).hide("fast");
-      $("#p1").toggle();
-      prev="#p1";
-    }*/
+    $("#2").click(function(){
+      if(prev!="#_2"){
+        $(prev).hide("fast");
+        $("#_2").show(1000);
+        prev="#_2";
+      }
+    });
 
-  });
+    $("#3").click(function(){
+      if(prev!="#_3"){
+        $(prev).hide("fast");
+        $("#_3").show(1000);
+        prev="#_3";
+      }
+    });
 
-  $("#2").click(function(){
-    if(prev!="#_2"){
-      $(prev).hide("fast");
-      $("#_2").show(1000);
-      prev="#_2";
-    }
-  });
+    $("#4").click(function(){
+      if(prev!="#_4"){
+        $(prev).hide("fast");
+        $("#_4").show(1000);
+        prev="#_4";
+      }
+    });
 
-  $("#3").click(function(){
-    if(prev!="#_3"){
-      $(prev).hide("fast");
-      $("#_3").show(1000);
-      prev="#_3";
-    }
-  });
+    $("#5").click(function(){
+      if(prev!="#_5"){
+        $(prev).hide("fast");
+        $("#_5").show(1000);
+        prev="#_5";
+      }
+    });
 
-  $("#4").click(function(){
-    if(prev!="#_4"){
-      $(prev).hide("fast");
-      $("#_4").show(1000);
-      prev="#_4";
-    }
-  });
+    $("#6").click(function(){
+      if(prev!="#_6"){
+        $(prev).hide("fast");
+        $("#_6").show(1000);
+        prev="#_6";
+      }
+    });
 
-  $("#5").click(function(){
-    if(prev!="#_5"){
-      $(prev).hide("fast");
-      $("#_5").show(1000);
-      prev="#_5";
-    }
-  });
+    $("#7").click(function(){
+      if(prev!="#_7"){
+        $(prev).hide("fast");
+        $("#_7").show(1000);
+        prev="#_7";
+      }
+    });
 
-  $("#6").click(function(){
-    if(prev!="#_6"){
-      $(prev).hide("fast");
-      $("#_6").show(1000);
-      prev="#_6";
-    }
-  });
+    $("#8").click(function(){
+      if(prev!="#_8"){
+        $(prev).hide("fast");
+        $("#_8").show(1000);
+        prev="#_8";
+      }
+    });
 
-  $("#7").click(function(){
-    if(prev!="#_7"){
-      $(prev).hide("fast");
-      $("#_7").show(1000);
-      prev="#_7";
-    }
-  });
+    $("#9").click(function(){
+      if(prev!="#_9"){
+        $(prev).hide("fast");
+        $("#_9").show(1000);
+        prev="#_9";
+      }
+    });
 
-  $("#8").click(function(){
-    if(prev!="#_8"){
-      $(prev).hide("fast");
-      $("#_8").show(1000);
-      prev="#_8";
-    }
-  });
-
-  $("#9").click(function(){
-    if(prev!="#_9"){
-      $(prev).hide("fast");
-      $("#_9").show(1000);
-      prev="#_9";
-    }
-  });
-
-  $("#10").click(function(){
-    if(prev!="#_10"){
-      $(prev).hide("fast");
-      prev="#_10";
-    }
-  });
-
-  $(".flex-nav").click(function(){
-    $(".flex-nav").hide();
-  });
-
-  $(".flex-phone").click(function(){
-    $(this).hide();
-  });
-
+    $("#10").click(function(){
+      if(prev!="#_10"){
+        $(prev).hide("fast");
+        prev="#_10";
+      }
+    });
+  }
+  else {
+    //Add your javascript for small screens here
     var prev_phone = "#p0";
-  
 
+    $("#1").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p1").show();
+    });
 
+    $("#2").click(function(){
+        $(".flex-phone").hide("fast");
+        $("#p2").show();
+      });
 
+    $("#3").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p3").show();
+    });
 
-  /*$(".flex-item").mouseleave(function(){
-    $(".flex-nav").hide();
-  });*/
+    $("#4").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p4").show();
+    });
+
+    $("#5").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p5").show();
+    });
+
+    $("#6").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p6").show();
+    });
+
+    $("#7").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p7").show();
+    });
+
+    $("#8").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p8").show();
+    });
+
+    $("#9").click(function(){
+      $(".flex-phone").hide("fast");
+      $("#p9").show();
+    });
+
+  }
 });
